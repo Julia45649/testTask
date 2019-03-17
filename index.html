@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="script/script.js" type="text/javascript"></script>
+    <title>test</title>
+</head>
+<body>
+    <form method="post">
+        <div class="login-form">
+            <h1>Sign in</h1>
+            <div id="wrong"></div>
+            <div class="form-group">
+                <img src="img/user_icon.png" class="user-name">
+                <input type="text" class="form-control" placeholder="Username " id="userName" onkeyup="validate()" onclick="validate()">
+            </div>
+            <div class="form-group log-status">
+                <img src="img/pass_icon.png" class="password">
+                <input type="password" class="form-control" placeholder="Password" id="password" onkeyup="validate()" onclick="validate()">
+            </div>
+            <a class="link" href="#">Lost your password?</a>
+            <button type="button" class="log-btn" id="sub" onclick="postAjax()" >Log in</button>
+        </div>
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
