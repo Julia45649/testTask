@@ -24,16 +24,14 @@ function validate(){
     }
 }
 function postAjax() {
-    var username = document.getElementById("userName").value;
-    var password = document.getElementById("password").value;
     axios.post('/auth/login', {
         headers: {
             'Accept': 'application/json',
             "Access-Control-Allow-Origin": "*",
         },
         data:{
-            userName: username,
-            password: password
+            username: 'test',
+            password: 'test',
         }
     })
         .then(function (response) {
