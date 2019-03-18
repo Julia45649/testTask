@@ -9842,3 +9842,8 @@ body {
   height: 100%;
   width: 100%;
 }
+@media screen and (min-height: 470px) {
+  body {
+    overflow: hidden;
+  }
+}
