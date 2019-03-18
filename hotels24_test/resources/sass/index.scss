@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: arial;
+}
+
+div#app {
+    background: url("/images/back.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+main{
+    height: -webkit-fill-available;
+}
+
+.login-form h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #3f3c3c;
+    margin: 0.67em 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-form {
+    width: 300px;
+    padding: 20px 30px;
+    background: rgba(245, 175, 65, 0.8);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+.user-name, .password{
+    position: relative;
+    line-height: 40px;
+    vertical-align: bottom;
+    height: 40px;
+    width: 40px;
+}
+.form-group input.form-control {
+    display: inline-block;
+    width: 80%;
+    height: 40px;
+    padding: 5px 7px 5px 15px;
+    background: #fff;
+    color: #666;
+    border: 2px solid #ddd;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.form-control:focus, .form-control:focus {
+    border-color: #0c9f76;
+}
+
+.log-btn {
+    background: #0c9f76;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.log-btn:disabled{
+    background: #8C918F;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    float: right;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.link:hover {
+    text-decoration: underline;
+    color: #8C918F;
+}
+#wrong{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 87%;
+}
